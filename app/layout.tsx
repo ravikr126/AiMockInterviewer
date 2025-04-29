@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+// import { Toaster } from "sonner";
 import { Mona_Sans } from "next/font/google";
 import "./globals.css";
 
@@ -20,10 +21,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark">
-      <body
-        className={`${monaSans.className } antialiased`}
-      >
+      <body className={`${monaSans.className} antialiased pattern`}>
         {children}
+
+        {/* <Toaster /> */}
       </body>
     </html>
   );
